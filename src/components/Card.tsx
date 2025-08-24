@@ -56,7 +56,7 @@ export default function Card() {
                 Lievia Veren
               </h1>
               <p className="text-gray-700 text-sm mt-1 text-shadow-sm">
-                Kepada Teman-teman yang sama
+                Kepada Teman-Teman
               </p>
               <p className="text-gray-700 text-sm my-1 text-shadow-sm">
                 Kamu Diundang Di Acara Ulang Tahun Aku
