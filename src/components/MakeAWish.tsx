@@ -31,7 +31,7 @@ export default function MakeAWish() {
     e.preventDefault();
 
     if (!name.trim() && !wish.trim()) {
-      setError("⚠️ Nama dan ucapan tidak boleh kosongs!");
+      setError("⚠️ Nama dan ucapan tidak boleh kosong!");
       setTimeout(() => setError(""), 5000);
       return;
     }
