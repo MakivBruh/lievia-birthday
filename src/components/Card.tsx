@@ -1,8 +1,10 @@
+import { useQueryParam } from "../hooks/useQueryParam";
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Music from "./Music";
 
 export default function Card() {
+  const nama = useQueryParam("nama");
   const [showCard, setShowCard] = useState(true);
   const musicRef = useRef<{ toggleMusic: () => void } | null>(null);
 
@@ -56,8 +58,13 @@ export default function Card() {
                 Lievia Veren
               </h1>
               <p className="text-gray-700 text-sm mt-1 text-shadow-sm">
-                Kepada Teman-Teman
+                Kepada
               </p>
+              {nama ? (
+                <p className="font-kapakana text-gray-700 text-4xl my-1 text-shadow-sm">{nama}</p>
+              ) : (
+                <p className="font-kapakana text-gray-700 text-4xl my-1 text-shadow-sm">Teman-Teman</p>
+              )}
               <p className="text-gray-700 text-sm my-1 text-shadow-sm">
                 Kamu Diundang Di Acara Ulang Tahun Aku
               </p>
