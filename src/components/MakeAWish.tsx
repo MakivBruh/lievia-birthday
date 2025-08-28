@@ -79,7 +79,7 @@ export default function MakeAWish() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.9, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="p-6 bg-gradient-to-br from-pink-400/40 to-purple-500/40 rounded-2xl shadow-xl mt-8 backdrop-blur-md">
+      className="p-6 max-w-100 lg:max-w-150  bg-gradient-to-br from-pink-400/40 to-purple-500/40 rounded-2xl shadow-xl mt-8 backdrop-blur-md">
         <h2 className="text-2xl font-extrabold text-center mb-6 text-white tracking-wide">
           💫 Make a Wish 💫
         </h2>
@@ -94,7 +94,7 @@ export default function MakeAWish() {
       {/* FORM */}
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col sm:flex-row gap-3 mb-8">
+        className="flex flex-col lg:flex-row gap-3 mb-8">
         <input
           type="text"
           value={name}
